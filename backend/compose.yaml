@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=backend'
+      - 'POSTGRES_PASSWORD=admin'
+      - 'POSTGRES_USER=postgres'
+    ports:
+      - '62039:5432'
