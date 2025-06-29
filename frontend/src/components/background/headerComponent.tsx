@@ -1,18 +1,30 @@
+import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
+import { ChevronDownIcon } from "@heroicons/react/16/solid";
+import { ShoppingCartIcon } from "@heroicons/react/24/outline";
+
 export default function Header() {
     return(
         <>
-            <div className="flex items-center w-screen justify-between h-16 pt-5 px-20">
+            <div className="flex items-center w-screen justify-between h-18 pt-5 px-20">
                 <p className="flex text-white font-semibold text-xl"><span className="text-blue-600">K</span>ILOBAITAS</p>
-                <div className="flex items-center justify-between w-2/5 h-full bg-red-950 backdrop-blur-xs rounded-4xl text-white">
-                    <input className="flex w-1/2 h-9 items-center bg-neutral-800 rounded-4xl" placeholder="Ieškoti prekės"/>
-                    <a href="">Produktai C</a>
+                <div className="flex items-center justify-between px-2 pr-6 w-2/5 h-full bg-red-950 backdrop-blur-xs rounded-4xl text-white">
+                    <div className="relative w-1/2 h-9 items-center bg-neutral-800 rounded-4xl">
+                        <MagnifyingGlassIcon className="absolute top-2 h-5 w-5 ml-3 fill-neutral-400"/>
+                        <input className="flex w-full h-full rounded-4xl pl-10 font-light text-sm text-neutral-400" placeholder="Ieškoti prekės..."/>
+                    </div>
+                    <a className="flex items-center" href="">
+                        <p>Produktai</p>
+                        <ChevronDownIcon className="ml-1 h-5 w-5"/>
+                    </a>
                     <a href="">Pristatymas</a>
                     <a href="">Kontaktai</a>
                 </div>
-                <div className="flex text-white">
-                    <a href="">Prisijungti</a>
-                    <div>Cart</div>
-                </div>
+                <a className="flex justify-between bg-red-950 w-1/10 h-full rounded-4xl items-center text-white" href="yikes">
+                    <div className="pl-7">Prisijungti</div>
+                    <a className="flex h-full w-14 justify-center items-center bg-lime-950 rounded-full" href="kik">
+                        <ShoppingCartIcon className="h-6 w-6"/>
+                    </a>
+                </a>
             </div>
         </>
     )
