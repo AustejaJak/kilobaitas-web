@@ -1,5 +1,5 @@
 import type {ReactNode} from "react";
-import Header from "../components/background/headerComponent.tsx";
+import Header from "../components/navbar/headerComponent.tsx";
 import BackgroundComponent from "../components/background/backgroundComponent.tsx";
 
 interface Props{
