@@ -1,7 +1,6 @@
-import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
-import { ChevronDownIcon } from "@heroicons/react/16/solid";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import SearchbarComponent from "./searchbarComponent.tsx";
+import DropdownComponent from "./dropdownComponent.tsx";
 
 export default function Header() {
     return(
@@ -10,14 +9,7 @@ export default function Header() {
                 <p className="flex text-white font-semibold text-xl"><span className="text-blue-600">K</span>ILOBAITAS</p>
                 <div className="flex items-center justify-between px-2 pr-6 w-2/5 h-full bg-red-950 backdrop-blur-xs rounded-4xl text-white">
                     <SearchbarComponent/>
-                    <div className="relative w-1/2 h-9 items-center bg-neutral-800 rounded-4xl">
-                        <MagnifyingGlassIcon className="absolute top-2 h-5 w-5 ml-3 fill-neutral-400"/>
-                        <input className="flex w-full h-full rounded-4xl pl-10 font-light text-sm text-neutral-400" placeholder="Ieškoti prekės..."/>
-                    </div>
-                    <a className="flex items-center" href="">
-                        <p>Produktai</p>
-                        <ChevronDownIcon className="ml-1 h-5 w-5"/>
-                    </a>
+                    <DropdownComponent/>
                     <a href="">Pristatymas</a>
                     <a href="">Kontaktai</a>
                 </div>
