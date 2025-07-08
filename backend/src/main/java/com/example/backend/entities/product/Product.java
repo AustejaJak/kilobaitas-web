@@ -1,8 +1,6 @@
 package com.example.backend.entities.product;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,6 +10,7 @@ import lombok.Setter;
 @Table(name = "products")
 public class Product {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int id;
     public String title;
     public double fullPrice;
