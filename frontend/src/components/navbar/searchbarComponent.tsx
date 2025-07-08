@@ -59,7 +59,7 @@ export default function SearchbarComponent() {
                         aria-hidden="true"
                     />
                     <ComboboxInput
-                        className="h-10 w-full max-w-xl bg-transparent pl-11 text-neutral-400 font-light focus:ring-0 sm:text-sm"
+                        className="h-10 w-full rounded-full max-w-xl bg-transparent pl-11 text-neutral-400 font-light focus:outline-none focus:ring-0 sm:text-sm"
                         placeholder="Ieškoti prekės..."
                         onChange={(event) => setQuery(event.target.value)}
                     />

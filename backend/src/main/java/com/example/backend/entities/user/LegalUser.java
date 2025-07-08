@@ -1,9 +1,8 @@
-package com.example.backend.Entities.User;
+package com.example.backend.entities.user;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
-import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
